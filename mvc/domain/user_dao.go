@@ -2,7 +2,6 @@ package domain
 
 import (
 	"fmt"
-	"log"
 	"net/http"
 
 	"github.com/ag3ntsc4rn/golang-microservices/mvc/utils"
@@ -32,7 +31,6 @@ func init() {
 }
 
 func (u *userDao) GetUser(userID int64) (*User, *utils.ApplicationError) {
-	log.Println("Connecting to database")
 	if user := users[userID]; user != nil {
 		return user, nil
 	}
