@@ -31,10 +31,10 @@ type CreateRepoResponse struct {
 }
 
 type RepoOwner struct {
-	ID      int64  `json:""id`
+	ID      int64  `json:"id"`
 	URL     string `json:"url"`
 	Login   string `json:"login"`
-	HtmlURL string `json:"html_url"`
+	HTMLURL string `json:"html_url"`
 }
 
 type RepoPermissions struct {
